@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- jsx names can't be reserved words, duh, or have dashes. camel case most names-->
+    export default function Notes() {
+        return(
+    <> <!-- to return multiple elements from component, it needs to be wraped in a single parent tag-->
+        <h1>React Application II + JSX</h1>
+        <img 
+            src="https://reactjs.org/logo-og.png" 
+            alt="React Logo" 
+            className="photo"
+        /> <!-- img is a self closing tag- doesn't usually require / but JSX reauires ALL tags to be EXPLICITLY closed <img /> -->
+        <ul>
+            <li>logic determines content</li>
+            <li>rendering logic and markup stay together in React</li>
+            <li>react components are javascript functions that react renders into the browser</li>
+            <li>JSX is a syntax extension for JavaScript that allows writing HTML-like code in JavaScript, React is a javascript library; they are independent of each other but can be used together</li>
+        </ul>
+    </> <!--this is a fragment; lets u group w/out leaving any trace in the browser -->
+    );
+    }
+</body>
+</html>
